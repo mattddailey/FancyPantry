@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A8DD4BD628921124006B1F12 /* FancyPantryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BD528921124006B1F12 /* FancyPantryApp.swift */; };
-		A8DD4BD828921124006B1F12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BD728921124006B1F12 /* ContentView.swift */; };
+		A8DD4BD828921124006B1F12 /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BD728921124006B1F12 /* GroceryListView.swift */; };
 		A8DD4BDA28921127006B1F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DD4BD928921127006B1F12 /* Assets.xcassets */; };
 		A8DD4BDD28921127006B1F12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DD4BDC28921127006B1F12 /* Preview Assets.xcassets */; };
 		A8DD4BE728921127006B1F12 /* FancyPantryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BE628921127006B1F12 /* FancyPantryTests.swift */; };
 		A8DD4BF128921127006B1F12 /* FancyPantryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BF028921127006B1F12 /* FancyPantryUITests.swift */; };
 		A8DD4BF328921127006B1F12 /* FancyPantryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BF228921127006B1F12 /* FancyPantryUITestsLaunchTests.swift */; };
+		A8DD4C0028921528006B1F12 /* GroceryListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BFF28921528006B1F12 /* GroceryListItemView.swift */; };
+		A8DD4C0228921541006B1F12 /* GroceryListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4C0128921541006B1F12 /* GroceryListStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		A8DD4BD228921124006B1F12 /* FancyPantry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyPantry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DD4BD528921124006B1F12 /* FancyPantryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyPantryApp.swift; sourceTree = "<group>"; };
-		A8DD4BD728921124006B1F12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A8DD4BD728921124006B1F12 /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
 		A8DD4BD928921127006B1F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8DD4BDC28921127006B1F12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8DD4BE228921127006B1F12 /* FancyPantryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyPantryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		A8DD4BEC28921127006B1F12 /* FancyPantryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyPantryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DD4BF028921127006B1F12 /* FancyPantryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyPantryUITests.swift; sourceTree = "<group>"; };
 		A8DD4BF228921127006B1F12 /* FancyPantryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyPantryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A8DD4BFF28921528006B1F12 /* GroceryListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListItemView.swift; sourceTree = "<group>"; };
+		A8DD4C0128921541006B1F12 /* GroceryListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,8 @@
 		A8DD4BD428921124006B1F12 /* FancyPantry */ = {
 			isa = PBXGroup;
 			children = (
+				A8DD4C0328921547006B1F12 /* GroceryList */,
 				A8DD4BD528921124006B1F12 /* FancyPantryApp.swift */,
-				A8DD4BD728921124006B1F12 /* ContentView.swift */,
 				A8DD4BD928921127006B1F12 /* Assets.xcassets */,
 				A8DD4BDB28921127006B1F12 /* Preview Content */,
 			);
@@ -125,6 +129,16 @@
 				A8DD4BF228921127006B1F12 /* FancyPantryUITestsLaunchTests.swift */,
 			);
 			path = FancyPantryUITests;
+			sourceTree = "<group>";
+		};
+		A8DD4C0328921547006B1F12 /* GroceryList */ = {
+			isa = PBXGroup;
+			children = (
+				A8DD4BD728921124006B1F12 /* GroceryListView.swift */,
+				A8DD4BFF28921528006B1F12 /* GroceryListItemView.swift */,
+				A8DD4C0128921541006B1F12 /* GroceryListStore.swift */,
+			);
+			path = GroceryList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8DD4BD828921124006B1F12 /* ContentView.swift in Sources */,
+				A8DD4BD828921124006B1F12 /* GroceryListView.swift in Sources */,
+				A8DD4C0228921541006B1F12 /* GroceryListStore.swift in Sources */,
 				A8DD4BD628921124006B1F12 /* FancyPantryApp.swift in Sources */,
+				A8DD4C0028921528006B1F12 /* GroceryListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct FancyPantryApp: App {
+    
+    @StateObject var groceryListStore = GroceryListStore()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GroceryListView()
+                .environmentObject(groceryListStore)
         }
     }
 }
