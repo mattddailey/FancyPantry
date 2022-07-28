@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct GroceryListView: View {
-    @EnvironmentObject var groceryListStore: GroceryListStore
+struct GroceryListView<T>: View where T: GroceryListStoreProtocol  {
+    @EnvironmentObject var groceryListStore: T
     
     var body: some View {
         List {
@@ -21,7 +21,7 @@ struct GroceryListView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        GroceryListView()
+        GroceryListView<GroceryListStore>()
             .environmentObject(GroceryListStore())
     }
 }

@@ -12,5 +12,5 @@ public protocol GroceryListStoreProtocol: ObservableObject {
 }
 
 public final class GroceryListStore: GroceryListStoreProtocol {
-    public var groceryList: [String] = ["Eggs", "Butter"]
+    @Published public var groceryList: [String] = ["Eggs", "Butter"]
 }
