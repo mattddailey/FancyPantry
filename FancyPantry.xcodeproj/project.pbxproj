@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8DD4BD628921124006B1F12 /* FancyPantryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BD528921124006B1F12 /* FancyPantryApp.swift */; };
+		A8DD4BD828921124006B1F12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BD728921124006B1F12 /* ContentView.swift */; };
+		A8DD4BDA28921127006B1F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DD4BD928921127006B1F12 /* Assets.xcassets */; };
+		A8DD4BDD28921127006B1F12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DD4BDC28921127006B1F12 /* Preview Assets.xcassets */; };
+		A8DD4BE728921127006B1F12 /* FancyPantryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BE628921127006B1F12 /* FancyPantryTests.swift */; };
+		A8DD4BF128921127006B1F12 /* FancyPantryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BF028921127006B1F12 /* FancyPantryUITests.swift */; };
+		A8DD4BF328921127006B1F12 /* FancyPantryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BF228921127006B1F12 /* FancyPantryUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8DD4BE328921127006B1F12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8DD4BCA28921124006B1F12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8DD4BD128921124006B1F12;
+			remoteInfo = FancyPantry;
+		};
+		A8DD4BED28921127006B1F12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8DD4BCA28921124006B1F12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8DD4BD128921124006B1F12;
+			remoteInfo = FancyPantry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8DD4BD228921124006B1F12 /* FancyPantry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyPantry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8DD4BD528921124006B1F12 /* FancyPantryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyPantryApp.swift; sourceTree = "<group>"; };
+		A8DD4BD728921124006B1F12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A8DD4BD928921127006B1F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8DD4BDC28921127006B1F12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A8DD4BE228921127006B1F12 /* FancyPantryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyPantryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8DD4BE628921127006B1F12 /* FancyPantryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyPantryTests.swift; sourceTree = "<group>"; };
+		A8DD4BEC28921127006B1F12 /* FancyPantryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyPantryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8DD4BF028921127006B1F12 /* FancyPantryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyPantryUITests.swift; sourceTree = "<group>"; };
+		A8DD4BF228921127006B1F12 /* FancyPantryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyPantryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8DD4BCF28921124006B1F12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8DD4BDF28921127006B1F12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8DD4BE928921127006B1F12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8DD4BC928921124006B1F12 = {
+			isa = PBXGroup;
+			children = (
+				A8DD4BD428921124006B1F12 /* FancyPantry */,
+				A8DD4BE528921127006B1F12 /* FancyPantryTests */,
+				A8DD4BEF28921127006B1F12 /* FancyPantryUITests */,
+				A8DD4BD328921124006B1F12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8DD4BD328921124006B1F12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8DD4BD228921124006B1F12 /* FancyPantry.app */,
+				A8DD4BE228921127006B1F12 /* FancyPantryTests.xctest */,
+				A8DD4BEC28921127006B1F12 /* FancyPantryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8DD4BD428921124006B1F12 /* FancyPantry */ = {
+			isa = PBXGroup;
+			children = (
+				A8DD4BD528921124006B1F12 /* FancyPantryApp.swift */,
+				A8DD4BD728921124006B1F12 /* ContentView.swift */,
+				A8DD4BD928921127006B1F12 /* Assets.xcassets */,
+				A8DD4BDB28921127006B1F12 /* Preview Content */,
+			);
+			path = FancyPantry;
+			sourceTree = "<group>";
+		};
+		A8DD4BDB28921127006B1F12 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A8DD4BDC28921127006B1F12 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8DD4BE528921127006B1F12 /* FancyPantryTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8DD4BE628921127006B1F12 /* FancyPantryTests.swift */,
+			);
+			path = FancyPantryTests;
+			sourceTree = "<group>";
+		};
+		A8DD4BEF28921127006B1F12 /* FancyPantryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A8DD4BF028921127006B1F12 /* FancyPantryUITests.swift */,
+				A8DD4BF228921127006B1F12 /* FancyPantryUITestsLaunchTests.swift */,
+			);
+			path = FancyPantryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8DD4BD128921124006B1F12 /* FancyPantry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8DD4BF628921127006B1F12 /* Build configuration list for PBXNativeTarget "FancyPantry" */;
+			buildPhases = (
+				A8DD4BCE28921124006B1F12 /* Sources */,
+				A8DD4BCF28921124006B1F12 /* Frameworks */,
+				A8DD4BD028921124006B1F12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FancyPantry;
+			productName = FancyPantry;
+			productReference = A8DD4BD228921124006B1F12 /* FancyPantry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8DD4BE128921127006B1F12 /* FancyPantryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8DD4BF928921127006B1F12 /* Build configuration list for PBXNativeTarget "FancyPantryTests" */;
+			buildPhases = (
+				A8DD4BDE28921127006B1F12 /* Sources */,
+				A8DD4BDF28921127006B1F12 /* Frameworks */,
+				A8DD4BE028921127006B1F12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8DD4BE428921127006B1F12 /* PBXTargetDependency */,
+			);
+			name = FancyPantryTests;
+			productName = FancyPantryTests;
+			productReference = A8DD4BE228921127006B1F12 /* FancyPantryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A8DD4BEB28921127006B1F12 /* FancyPantryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8DD4BFC28921127006B1F12 /* Build configuration list for PBXNativeTarget "FancyPantryUITests" */;
+			buildPhases = (
+				A8DD4BE828921127006B1F12 /* Sources */,
+				A8DD4BE928921127006B1F12 /* Frameworks */,
+				A8DD4BEA28921127006B1F12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8DD4BEE28921127006B1F12 /* PBXTargetDependency */,
+			);
+			name = FancyPantryUITests;
+			productName = FancyPantryUITests;
+			productReference = A8DD4BEC28921127006B1F12 /* FancyPantryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8DD4BCA28921124006B1F12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A8DD4BD128921124006B1F12 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A8DD4BE128921127006B1F12 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A8DD4BD128921124006B1F12;
+					};
+					A8DD4BEB28921127006B1F12 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A8DD4BD128921124006B1F12;
+					};
+				};
+			};
+			buildConfigurationList = A8DD4BCD28921124006B1F12 /* Build configuration list for PBXProject "FancyPantry" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8DD4BC928921124006B1F12;
+			productRefGroup = A8DD4BD328921124006B1F12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8DD4BD128921124006B1F12 /* FancyPantry */,
+				A8DD4BE128921127006B1F12 /* FancyPantryTests */,
+				A8DD4BEB28921127006B1F12 /* FancyPantryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8DD4BD028921124006B1F12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DD4BDD28921127006B1F12 /* Preview Assets.xcassets in Resources */,
+				A8DD4BDA28921127006B1F12 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8DD4BE028921127006B1F12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8DD4BEA28921127006B1F12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8DD4BCE28921124006B1F12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DD4BD828921124006B1F12 /* ContentView.swift in Sources */,
+				A8DD4BD628921124006B1F12 /* FancyPantryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8DD4BDE28921127006B1F12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DD4BE728921127006B1F12 /* FancyPantryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8DD4BE828921127006B1F12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DD4BF328921127006B1F12 /* FancyPantryUITestsLaunchTests.swift in Sources */,
+				A8DD4BF128921127006B1F12 /* FancyPantryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8DD4BE428921127006B1F12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8DD4BD128921124006B1F12 /* FancyPantry */;
+			targetProxy = A8DD4BE328921127006B1F12 /* PBXContainerItemProxy */;
+		};
+		A8DD4BEE28921127006B1F12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8DD4BD128921124006B1F12 /* FancyPantry */;
+			targetProxy = A8DD4BED28921127006B1F12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A8DD4BF428921127006B1F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8DD4BF528921127006B1F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8DD4BF728921127006B1F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FancyPantry/Preview Content\"";
+				DEVELOPMENT_TEAM = MJN2Y3L57U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.md.FancyPantry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8DD4BF828921127006B1F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FancyPantry/Preview Content\"";
+				DEVELOPMENT_TEAM = MJN2Y3L57U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.md.FancyPantry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8DD4BFA28921127006B1F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJN2Y3L57U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.md.FancyPantryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FancyPantry.app/FancyPantry";
+			};
+			name = Debug;
+		};
+		A8DD4BFB28921127006B1F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJN2Y3L57U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.md.FancyPantryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FancyPantry.app/FancyPantry";
+			};
+			name = Release;
+		};
+		A8DD4BFD28921127006B1F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJN2Y3L57U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.md.FancyPantryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FancyPantry;
+			};
+			name = Debug;
+		};
+		A8DD4BFE28921127006B1F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJN2Y3L57U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.md.FancyPantryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FancyPantry;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8DD4BCD28921124006B1F12 /* Build configuration list for PBXProject "FancyPantry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8DD4BF428921127006B1F12 /* Debug */,
+				A8DD4BF528921127006B1F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8DD4BF628921127006B1F12 /* Build configuration list for PBXNativeTarget "FancyPantry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8DD4BF728921127006B1F12 /* Debug */,
+				A8DD4BF828921127006B1F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8DD4BF928921127006B1F12 /* Build configuration list for PBXNativeTarget "FancyPantryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8DD4BFA28921127006B1F12 /* Debug */,
+				A8DD4BFB28921127006B1F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8DD4BFC28921127006B1F12 /* Build configuration list for PBXNativeTarget "FancyPantryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8DD4BFD28921127006B1F12 /* Debug */,
+				A8DD4BFE28921127006B1F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8DD4BCA28921124006B1F12 /* Project object */;
+}
