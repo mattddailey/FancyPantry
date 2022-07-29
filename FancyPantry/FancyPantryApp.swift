@@ -14,7 +14,7 @@ struct FancyPantryApp: App {
     
     var body: some Scene {
         WindowGroup {
-            GroceryListView<GroceryListStore>()
+            GroceryListView()
                 .environmentObject(groceryListStore)
         }
     }

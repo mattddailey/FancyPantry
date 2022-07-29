@@ -8,12 +8,12 @@ with open('schema.sql') as f:
 
 cur = connection.cursor()
 
-cur.execute("INSERT INTO groceryList (title, type) VALUES (?, ?)",
-            ('Eggs', 'Dairy')
+cur.execute("INSERT INTO groceryList (title, active) VALUES (?, ?)",
+            ('Eggs', True)
             )
 
-cur.execute("INSERT INTO groceryList (title, type) VALUES (?, ?)",
-            ('Apples', 'Fruit')
+cur.execute("INSERT INTO groceryList (title, active) VALUES (?, ?)",
+            ('Apples', False)
             )
 
 connection.commit()

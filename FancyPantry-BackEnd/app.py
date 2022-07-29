@@ -18,7 +18,7 @@ def index():
     if request.method == "GET":
         cursor = conn.execute("SELECT * FROM groceryList")
         groceryList = [
-            dict(id=row[0], timestamp=row[1], title=row[2], type=row[3])
+            dict(id=row[0], title=row[1], active=row[2])
             for row in cursor.fetchall()
         ]
         conn.close()

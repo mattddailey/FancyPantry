@@ -7,21 +7,24 @@
 
 import SwiftUI
 
-struct GroceryListView<T>: View where T: GroceryListStoreProtocol  {
-    @EnvironmentObject var groceryListStore: T
+struct GroceryListView: View  {
+    @EnvironmentObject var groceryListStore: GroceryListStore
     
     var body: some View {
         List {
-            ForEach(groceryListStore.groceryList, id: \.self) { groceryItem in
-                GroceryListItemView(item: groceryItem)
+            ForEach(groceryListStore.groceries) { groceryItem in
+                GroceryListItemView(id: groceryItem.id, title: groceryItem.title, isActive: groceryItem.isActive)
             }
+        }
+        .task {
+            await groceryListStore.fetchGroceries()
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        GroceryListView<GroceryListStore>()
+        GroceryListView()
             .environmentObject(GroceryListStore())
     }
 }
