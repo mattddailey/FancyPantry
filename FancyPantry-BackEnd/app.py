@@ -26,4 +26,4 @@ def index():
             return jsonify(groceryList)
 
     elif request.method == "POST":
-        return 'Hello World!'
+        return 'Post not implemented...!'
