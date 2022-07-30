@@ -10,13 +10,12 @@
 		A87245F7289459DD00A2492A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87245F6289459DD00A2492A /* APIClient.swift */; };
 		A87245F928945A4A00A2492A /* Grocery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87245F828945A4A00A2492A /* Grocery.swift */; };
 		A8724601289570A300A2492A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8724600289570A300A2492A /* APIError.swift */; };
+		A872460528958BA300A2492A /* GroceryListStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872460428958BA300A2492A /* GroceryListStoreTests.swift */; };
+		A872460A28958DFD00A2492A /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872460928958DFD00A2492A /* MockAPIClient.swift */; };
 		A8DD4BD628921124006B1F12 /* FancyPantryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BD528921124006B1F12 /* FancyPantryApp.swift */; };
 		A8DD4BD828921124006B1F12 /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BD728921124006B1F12 /* GroceryListView.swift */; };
 		A8DD4BDA28921127006B1F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DD4BD928921127006B1F12 /* Assets.xcassets */; };
 		A8DD4BDD28921127006B1F12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DD4BDC28921127006B1F12 /* Preview Assets.xcassets */; };
-		A8DD4BE728921127006B1F12 /* FancyPantryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BE628921127006B1F12 /* FancyPantryTests.swift */; };
-		A8DD4BF128921127006B1F12 /* FancyPantryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BF028921127006B1F12 /* FancyPantryUITests.swift */; };
-		A8DD4BF328921127006B1F12 /* FancyPantryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BF228921127006B1F12 /* FancyPantryUITestsLaunchTests.swift */; };
 		A8DD4C0028921528006B1F12 /* GroceryListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BFF28921528006B1F12 /* GroceryListItemView.swift */; };
 		A8DD4C0228921541006B1F12 /* GroceryListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4C0128921541006B1F12 /* GroceryListStore.swift */; };
 /* End PBXBuildFile section */
@@ -42,16 +41,16 @@
 		A87245F6289459DD00A2492A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A87245F828945A4A00A2492A /* Grocery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grocery.swift; sourceTree = "<group>"; };
 		A8724600289570A300A2492A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		A872460428958BA300A2492A /* GroceryListStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListStoreTests.swift; sourceTree = "<group>"; };
+		A872460928958DFD00A2492A /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		A872460B28958F0300A2492A /* FancyPantryTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FancyPantryTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A8DD4BD228921124006B1F12 /* FancyPantry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyPantry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DD4BD528921124006B1F12 /* FancyPantryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyPantryApp.swift; sourceTree = "<group>"; };
 		A8DD4BD728921124006B1F12 /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
 		A8DD4BD928921127006B1F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8DD4BDC28921127006B1F12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8DD4BE228921127006B1F12 /* FancyPantryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyPantryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8DD4BE628921127006B1F12 /* FancyPantryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyPantryTests.swift; sourceTree = "<group>"; };
 		A8DD4BEC28921127006B1F12 /* FancyPantryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyPantryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8DD4BF028921127006B1F12 /* FancyPantryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyPantryUITests.swift; sourceTree = "<group>"; };
-		A8DD4BF228921127006B1F12 /* FancyPantryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyPantryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A8DD4BFF28921528006B1F12 /* GroceryListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListItemView.swift; sourceTree = "<group>"; };
 		A8DD4C0128921541006B1F12 /* GroceryListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,12 +113,19 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		A872460628958D3F00A2492A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A872460928958DFD00A2492A /* MockAPIClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		A8DD4BC928921124006B1F12 = {
 			isa = PBXGroup;
 			children = (
 				A8DD4BD428921124006B1F12 /* FancyPantry */,
 				A8DD4BE528921127006B1F12 /* FancyPantryTests */,
-				A8DD4BEF28921127006B1F12 /* FancyPantryUITests */,
 				A8DD4BD328921124006B1F12 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -158,18 +164,11 @@
 		A8DD4BE528921127006B1F12 /* FancyPantryTests */ = {
 			isa = PBXGroup;
 			children = (
-				A8DD4BE628921127006B1F12 /* FancyPantryTests.swift */,
+				A872460628958D3F00A2492A /* Mocks */,
+				A872460428958BA300A2492A /* GroceryListStoreTests.swift */,
+				A872460B28958F0300A2492A /* FancyPantryTests-Bridging-Header.h */,
 			);
 			path = FancyPantryTests;
-			sourceTree = "<group>";
-		};
-		A8DD4BEF28921127006B1F12 /* FancyPantryUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A8DD4BF028921127006B1F12 /* FancyPantryUITests.swift */,
-				A8DD4BF228921127006B1F12 /* FancyPantryUITestsLaunchTests.swift */,
-			);
-			path = FancyPantryUITests;
 			sourceTree = "<group>";
 		};
 		A8DD4C0328921547006B1F12 /* GroceryList */ = {
@@ -253,6 +252,7 @@
 					};
 					A8DD4BE128921127006B1F12 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = A8DD4BD128921124006B1F12;
 					};
 					A8DD4BEB28921127006B1F12 = {
@@ -326,7 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8DD4BE728921127006B1F12 /* FancyPantryTests.swift in Sources */,
+				A872460528958BA300A2492A /* GroceryListStoreTests.swift in Sources */,
+				A872460A28958DFD00A2492A /* MockAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,8 +335,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8DD4BF328921127006B1F12 /* FancyPantryUITestsLaunchTests.swift in Sources */,
-				A8DD4BF128921127006B1F12 /* FancyPantryUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,15 +533,23 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MJN2Y3L57U;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.md.FancyPantryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "FancyPantryTests/FancyPantryTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FancyPantry.app/FancyPantry";
@@ -554,15 +561,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MJN2Y3L57U;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.md.FancyPantryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "FancyPantryTests/FancyPantryTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FancyPantry.app/FancyPantry";

@@ -25,11 +25,20 @@ class GroceryListStore: GroceryListStoreProtocol {
     @Published public var appError: ErrorType? = nil
     @Published public var presentAlert: Bool = false
     
+    // MARK: - Private properties
+    private let apiClient: APIClientProtocol
+    
+    // MARK: - Initialization
+    
+    init(apiClient: APIClientProtocol = APIClient.shared) {
+        self.apiClient = apiClient
+    }
+    
     // MARK: - Public methods
     
     func fetchGroceries() async {
         do {
-            let result = try await APIClient.fetchGroceries()
+            let result = try await apiClient.fetchGroceries()
             self.groceries = result
         } catch let error as APIError {
             presentAlert = true
@@ -44,7 +53,7 @@ class GroceryListStore: GroceryListStoreProtocol {
         do {
             var tempGrocery = grocery
             tempGrocery.active = tempGrocery.active == 1 ? 0 : 1
-            let result = try await APIClient.updateGrocery(grocery: tempGrocery)
+            let result = try await apiClient.updateGrocery(grocery: tempGrocery)
             self.groceries = result
         } catch let error as APIError {
             presentAlert = true

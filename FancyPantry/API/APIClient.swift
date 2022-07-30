@@ -7,11 +7,23 @@
 
 import Foundation
 
-class APIClient {
+protocol APIClientProtocol {
+    func fetchGroceries() async throws -> [Grocery]
+    func updateGrocery(grocery: Grocery) async throws -> [Grocery]
+}
+
+class APIClient: APIClientProtocol {
     
-    static let apiURL = "http://127.0.0.1:5000"
+    static let shared = APIClient()
     
-    static func fetchGroceries() async throws -> [Grocery] {
+    private let apiURL = "http://127.0.0.1:5000"
+    private let session: URLSession
+    
+    init(urlSession: URLSession = .shared) {
+        self.session = urlSession
+    }
+    
+    func fetchGroceries() async throws -> [Grocery] {
         guard let url = URL(string: apiURL + "/groceryList") else {
             throw APIError.invalidURL
         }
@@ -29,7 +41,7 @@ class APIClient {
         return decodedResponse
     }
     
-    static func updateGrocery(grocery: Grocery) async throws -> [Grocery] {
+    func updateGrocery(grocery: Grocery) async throws -> [Grocery] {
         guard let url = URL(string: apiURL + "/groceryList/\(grocery.id)") else {
             throw APIError.invalidURL
         }
