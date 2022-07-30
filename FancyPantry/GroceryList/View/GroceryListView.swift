@@ -13,11 +13,16 @@ struct GroceryListView: View  {
     var body: some View {
         List {
             ForEach(groceryListStore.groceries) { groceryItem in
-                GroceryListItemView(id: groceryItem.id, title: groceryItem.title, isActive: groceryItem.isActive)
+                GroceryListItemView(grocery: groceryItem)
             }
         }
         .task {
             await groceryListStore.fetchGroceries()
+        }
+        .alert("Error", isPresented: $groceryListStore.presentAlert, presenting: groceryListStore.appError) { appError in
+            Button("Ok") {}
+        } message: { appError in
+            Text(appError.error.localizedDescription)
         }
     }
 }

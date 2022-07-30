@@ -8,10 +8,11 @@
 import Foundation
 
 
-public struct Grocery: Decodable, Hashable, Identifiable {
+public struct Grocery: Encodable, Decodable, Hashable, Identifiable {
     public let id: Int
-    let title: String
-    let active: Int
+    
+    var title: String
+    var active: Int
     
     var isActive: Bool {
         return active == 1

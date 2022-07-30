@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A87245F7289459DD00A2492A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87245F6289459DD00A2492A /* APIClient.swift */; };
 		A87245F928945A4A00A2492A /* Grocery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87245F828945A4A00A2492A /* Grocery.swift */; };
+		A8724601289570A300A2492A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8724600289570A300A2492A /* APIError.swift */; };
 		A8DD4BD628921124006B1F12 /* FancyPantryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BD528921124006B1F12 /* FancyPantryApp.swift */; };
 		A8DD4BD828921124006B1F12 /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD4BD728921124006B1F12 /* GroceryListView.swift */; };
 		A8DD4BDA28921127006B1F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DD4BD928921127006B1F12 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		A87245F6289459DD00A2492A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A87245F828945A4A00A2492A /* Grocery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grocery.swift; sourceTree = "<group>"; };
+		A8724600289570A300A2492A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		A8DD4BD228921124006B1F12 /* FancyPantry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyPantry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DD4BD528921124006B1F12 /* FancyPantryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyPantryApp.swift; sourceTree = "<group>"; };
 		A8DD4BD728921124006B1F12 /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A87245FD2895705600A2492A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8DD4BD728921124006B1F12 /* GroceryListView.swift */,
+				A8DD4BFF28921528006B1F12 /* GroceryListItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A87245FE2895706800A2492A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A87245F828945A4A00A2492A /* Grocery.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A87245FF2895708900A2492A /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				A8724600289570A300A2492A /* APIError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		A872460228957A9B00A2492A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A87245F6289459DD00A2492A /* APIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		A8DD4BC928921124006B1F12 = {
 			isa = PBXGroup;
 			children = (
@@ -102,9 +137,10 @@
 		A8DD4BD428921124006B1F12 /* FancyPantry */ = {
 			isa = PBXGroup;
 			children = (
+				A87245FF2895708900A2492A /* Error */,
+				A872460228957A9B00A2492A /* API */,
 				A8DD4C0328921547006B1F12 /* GroceryList */,
 				A8DD4BD528921124006B1F12 /* FancyPantryApp.swift */,
-				A87245F6289459DD00A2492A /* APIClient.swift */,
 				A8DD4BD928921127006B1F12 /* Assets.xcassets */,
 				A8DD4BDB28921127006B1F12 /* Preview Content */,
 			);
@@ -139,10 +175,9 @@
 		A8DD4C0328921547006B1F12 /* GroceryList */ = {
 			isa = PBXGroup;
 			children = (
-				A8DD4BD728921124006B1F12 /* GroceryListView.swift */,
-				A8DD4BFF28921528006B1F12 /* GroceryListItemView.swift */,
+				A87245FE2895706800A2492A /* Model */,
 				A8DD4C0128921541006B1F12 /* GroceryListStore.swift */,
-				A87245F828945A4A00A2492A /* Grocery.swift */,
+				A87245FD2895705600A2492A /* View */,
 			);
 			path = GroceryList;
 			sourceTree = "<group>";
@@ -283,6 +318,7 @@
 				A8DD4BD628921124006B1F12 /* FancyPantryApp.swift in Sources */,
 				A87245F7289459DD00A2492A /* APIClient.swift in Sources */,
 				A8DD4C0028921528006B1F12 /* GroceryListItemView.swift in Sources */,
+				A8724601289570A300A2492A /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
