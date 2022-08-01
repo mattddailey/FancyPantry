@@ -7,7 +7,7 @@
 
 import Foundation
 
-@MainActor
+
 public protocol GroceryListStoreProtocol: ObservableObject {
     var groceries: [Grocery] { get }
     var appError: ErrorType? { get }
@@ -39,13 +39,11 @@ class GroceryListStore: GroceryListStoreProtocol {
     func fetchGroceries() async {
         do {
             let result = try await apiClient.fetchGroceries()
-            self.groceries = result
+            await updateGroceries(groceries: result)
         } catch let error as APIError {
-            presentAlert = true
-            appError = ErrorType(error: error)
+            await presentAlert(for: error)
         } catch {
-            presentAlert = true
-            appError = ErrorType(error: .unknownError)
+            await presentAlert(for: .unknownError)
         }
     }
     
@@ -54,13 +52,24 @@ class GroceryListStore: GroceryListStoreProtocol {
             var tempGrocery = grocery
             tempGrocery.active = tempGrocery.active == 1 ? 0 : 1
             let result = try await apiClient.updateGrocery(grocery: tempGrocery)
-            self.groceries = result
+            await updateGroceries(groceries: result)
         } catch let error as APIError {
-            presentAlert = true
-            appError = ErrorType(error: error)
+            await presentAlert(for: error)
         } catch {
-            presentAlert = true
-            appError = ErrorType(error: .unknownError)
+            await presentAlert(for: .unknownError)
         }
+    }
+    
+    // MARK: - Private methods
+    
+    @MainActor
+    private func updateGroceries(groceries: [Grocery]) {
+        self.groceries = groceries
+    }
+    
+    @MainActor
+    private func presentAlert(for error: APIError) {
+        presentAlert = true
+        appError = ErrorType(error: error)
     }
 }

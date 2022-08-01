@@ -8,7 +8,7 @@
 import Foundation
 
 
-public struct Grocery: Encodable, Decodable, Hashable, Identifiable, Equatable {
+public struct Grocery: Codable, Hashable, Identifiable, Equatable {
     public let id: Int
     
     var title: String

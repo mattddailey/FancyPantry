@@ -12,7 +12,7 @@ def get_db_connection():
     return conn
 
 @app.route("/groceryList", methods=["GET"])
-def fetchGroceries():
+def groceryList():
     conn = get_db_connection()
 
     cursor = conn.execute("SELECT * FROM groceryList")
@@ -42,4 +42,4 @@ def updateGrocery(id):
     except sqlite3.Error as error:
         print("Failed to update sqlite table", error)
 
-    return fetchGroceries()
+    return groceryList()

@@ -7,112 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F183C2DA-EA75-421B-89CC-AB740E302D96"
+            uuid = "F7160932-7DB9-47AF-9B00-13B8826B15BC"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FancyPantryTests/GroceryListStoreTests.swift"
+            filePath = "FancyPantry/API/APIClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "testFetchGroceries_Success_ReturnsGroceries()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F183C2DA-EA75-421B-89CC-AB740E302D96 - 546c110012361574"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for FancyPantryTests.GroceryListStoreTests.testFetchGroceries_ReturnsGroceries() async -&gt; ()"
-                  moduleName = "FancyPantryTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mdaile524/personalDev/FancyPantry/FancyPantryTests/GroceryListStoreTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "963">
-               </Location>
-               <Location
-                  uuid = "F183C2DA-EA75-421B-89CC-AB740E302D96 - 85120949ae436d48"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for FancyPantryTests.GroceryListStoreTests.testFetchGroceries_ReturnsGroceries() async -&gt; ()"
-                  moduleName = "FancyPantryTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mdaile524/personalDev/FancyPantry/FancyPantryTests/GroceryListStoreTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "50">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "349A740D-0CA6-447F-9671-20570AB302A2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FancyPantryTests/GroceryListStoreTests.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "testFetchGroceries_Success_ReturnsGroceries()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7988AEFE-CBB5-4569-A65B-78EB6CA18AE3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FancyPantryTests/GroceryListStoreTests.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "testFetchGroceries_Success_ReturnsGroceries()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B40DC953-0E9F-4E75-ADC5-D4CB6DC62116"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FancyPantryTests/GroceryListStoreTests.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "testFetchGroceries_Success_ReturnsGroceries()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "34D1F413-0346-42AE-B217-1D76820673D7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FancyPantryTests/GroceryListStoreTests.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "testFetchGroceries_ThrowsAPIError_PresentsAlert()"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "request(endpoint:method:body:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
